@@ -3,17 +3,23 @@ Machine learning code to decide whether the mushroom is edible or poisonous base
  
 !!! CODE INSIGHT!!!
 
-Line 2-9 : Import all the required libraries and modules 
+Line 2-6 : Import all the required libraries and modules 
        [More datails about the SKlearn library](https://scikit-learn.org/stable/user_guide.html)
 
 Download the dataset [hear](https://www.kaggle.com/uciml/mushroom-classification)
-Line 12  : Load the downloaded dataset with pandas read_csv() method
+Line 9  : Load the downloaded dataset with pandas read_csv() method
        [All about Pandas](https://pandas.pydata.org/pandas-docs/stable/)
 
-Line 15,17,23: .sample() method is used to print the starting 3 rows of the dataset
-               .info() method is used to print the information about the features in the dataset
-               .drop() method is udes to drop a column from the dataset axis = 1 indicates a column should be dropped
+Data wrangling is the method used to convert the features in the data set into the format supported by the algorithms. Ex: Converting the features of datatype strings into intiger or float.
 
+Line 21 : wrangle() performs data wrangling
+          
+  Two methods are used in  the code.
+          
+  1. map function : Used for the features with only two unique entries. This method maps one entry as 1 and another as 0.
+  
+  2. When a feature has more than two unique entries.
+     get_dummies() creates dummy columns with with name having the prefix given by the user 
 Line 38-43 : train_test_split() is a method in sklearn.model_selection splits the dataset into training and test datasets, this method                splits the dataset in such a way that each section has uniform distribution of all classes [more about train test split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) 
              This method is called twice to devide the dataset as training, validation and test sets.
  
