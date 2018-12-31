@@ -15,7 +15,7 @@ print(data.head())
 # For the features having 2 different entries the we will map one entry to 1 and the other one to 0
 # For the features having more than 2 types of entries we create more columns equal to the number of entries with the prefix being...
 # ... old column name and the entries as 1 or 0 according to the type
-# Ex: for a column X with types a,b,c the column will be split as X_a,X_b,X_c and X_will be 1 for the wherever the entries in the old..
+# Ex: for a column X with types a,b,c the column will be split as X_a,X_b,X_c and X_a will be 1 wherever the entries in the old..
 # column was a and rest entries in the X_a will be 0 same for X_b and X_c
 
 def wrangle(data):
