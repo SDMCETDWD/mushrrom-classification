@@ -39,13 +39,13 @@ We can always visualise how the feature and the output are related and desirable
 
 Line 122 : Classifier used is RandomForestClassifier method from sklearn.ensemble [All about Ensemble methods](https://scikit-learn.org/stable/modules/ensemble.html#random-forests)
 
-Line 131,132 : score() evaluates the trained model performance on both training and validation data set
+Line 131,132 : score() evaluates the trained model performance on both training and validation data set [evaluation methods available in sklearn](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics)
 
 Line 137 : predict() makes predictions on the test data.
 
 Line 140,141 : print the 10 samples of actual and predicted output
 
-Line 145 : print the difference between predicted and actual data calculated using mean_suared_error() from sklearn.metrics
+Line 145 : print the difference between predicted and actual data calculated using mean_suared_error() from sklearn.metrics 
 
 The output of the RandomForestClassifier funstion:
 * train_accuracy = 1.0
