@@ -19,7 +19,13 @@ Line 21 : wrangle() performs data wrangling
   1. map function : Used for the features with only two unique entries. This method maps one entry as 1 and another as 0.
   
   2. When a feature has more than two unique entries.
-     get_dummies() creates dummy columns with with name having the prefix given by the user 
+     
+     get_dummies() creates dummy columns with with name having the prefix given by the user. EX: for a column X with types a,b,c the          column will be split as X_a,X_b,X_c and X_a will be 1 wherever the entries in the old column was a and rest entries in the X_a will      be 0 same for X_b and X_c 
+     
+     concat() concates the new columns with the dataset
+     
+     drop() drops the old column.
+     
 Line 38-43 : train_test_split() is a method in sklearn.model_selection splits the dataset into training and test datasets, this method                splits the dataset in such a way that each section has uniform distribution of all classes [more about train test split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html) 
              This method is called twice to devide the dataset as training, validation and test sets.
  
